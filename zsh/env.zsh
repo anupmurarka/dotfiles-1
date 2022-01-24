@@ -1,3 +1,6 @@
+# Keychain
+eval `keychain --eval --agents ssh --inherit any id_rsa`
+
 # Locale
 export LC_ALL=en_US.UTF-8
 export LANG="en_US"
@@ -41,13 +44,13 @@ export LESS="${less_options[*]}"
 export PAGER='less'
 
 # Highlighting inside manpages and elsewhere
-export LESS_TERMCAP_mb="\e'[01;31m'"       # begin blinking
-export LESS_TERMCAP_md="\e'[01;38;5;74m'"  # begin bold
-export LESS_TERMCAP_me="\e'[0m'"           # end mode
-export LESS_TERMCAP_se="\e'[0m'"           # end standout-mode
-export LESS_TERMCAP_so="\e'[38;5;246m'"    # begin standout-mode - info box
-export LESS_TERMCAP_ue="\e'[0m'"           # end underline
-export LESS_TERMCAP_us="\e'[04;38;5;146m'" # begin underline
+#export LESS_TERMCAP_mb="\e'[01;31m'"       # begin blinking
+#export LESS_TERMCAP_md="\e'[01;38;5;74m'"  # begin bold
+#export LESS_TERMCAP_me="\e'[0m'"           # end mode
+#export LESS_TERMCAP_se="\e'[0m'"           # end standout-mode
+#export LESS_TERMCAP_so="\e'[38;5;246m'"    # begin standout-mode - info box
+#export LESS_TERMCAP_ue="\e'[0m'"           # end underline
+#export LESS_TERMCAP_us="\e'[04;38;5;146m'" # begin underline
 
 # LS colors, made with http://geoff.greer.fm/lscolors/
 export LSCOLORS="Gxfxcxdxbxegedabagacad"

@@ -22,26 +22,30 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'stripe/stripe-cli/stripe'
 brew 'stripe/stripe-mock/stripe-mock'
 brew 'svn' # Needed to install fonts
+brew 'keychain'
 
 # Spatie Medialibrary
-brew 'jpegoptim'
-brew 'optipng'
-brew 'pngquant'
-brew 'svgo'
-brew 'gifsicle'
+#brew 'jpegoptim'
+#brew 'optipng'
+#brew 'pngquant'
+#brew 'svgo'
+#brew 'gifsicle'
 
 # Development
-brew 'php'
-brew 'php@8.0'
-brew 'php@7.4'
-brew 'composer'
+#brew 'php'
+#brew 'php@8.0'
+#brew 'php@7.4'
+#brew 'composer'
 brew 'imagemagick'
-brew 'meilisearch'
-brew 'mysql'
+#brew 'meilisearch'
+#brew 'mysql'
 brew 'nginx'
-brew 'node'
+#brew 'node'
 brew 'redis'
 brew 'yarn'
+brew 'starship'
+
+# TODO nvm
 
 # Apps
 cask '1password'
@@ -59,8 +63,8 @@ cask 'homebrew/cask-drivers/elgato-stream-deck'
 cask 'imageoptim'
 cask 'insomnia'
 cask 'pastebot'
-cask 'phpmon'
-cask 'phpstorm'
+#cask 'phpmon'
+#cask 'phpstorm'
 cask 'ray'
 cask 'screenflow'
 cask 'slack'
@@ -72,8 +76,15 @@ cask 'transmit'
 cask 'tunnelbear'
 cask 'tuple'
 cask 'visual-studio-code'
-cask 'whatsapp'
-cask 'zoom'
+#cask 'whatsapp'
+#cask 'zoom'
+
+# TODO 
+# Boop
+# Notion
+# Sublime Text
+# git-Tower
+# Xcode
 
 # Quicklook
 cask 'qlmarkdown'
@@ -87,6 +98,9 @@ cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
+cask 'font-fira-code-nerd-font'
+cask 'font-mononoki-nerd-font'
+cask 'font-sauce-code-pro-nerd-font'
 
 # Mac App Store
 mas 'Byword', id: 420212497

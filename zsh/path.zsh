@@ -26,5 +26,3 @@ export PATH
 
 # Load Node global installed binaries
 # export PATH="$HOME/.node/bin:$PATH"
-
-echo "LOADED $DOTFILES/zsh/path.zsh"

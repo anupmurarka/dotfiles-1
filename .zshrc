@@ -96,3 +96,9 @@ source $ZSH/oh-my-zsh.sh
 # Customize shell prompt using Starship (https://github.com/starship/starship)
 export STARSHIP_CONFIG=$DOTFILES/.starship.toml
 eval "$(starship init zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/anup/code/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/anup/code/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/anup/code/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/anup/code/google-cloud-sdk/completion.zsh.inc'; fi

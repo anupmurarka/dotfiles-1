@@ -79,5 +79,5 @@ export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 GATSBY_TELEMETRY_DISABLED=1
 
 # Homebrew github personal access token
-export 'HOMEBREW_GITHUB_API_TOKEN=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'
+export 'HOMEBREW_GITHUB_API_TOKEN='
 

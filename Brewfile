@@ -26,23 +26,9 @@ brew 'stripe/stripe-mock/stripe-mock'
 brew 'svn' # Needed to install fonts
 brew 'keychain'
 
-# Spatie Medialibrary
-#brew 'jpegoptim'
-#brew 'optipng'
-#brew 'pngquant'
-#brew 'svgo'
-#brew 'gifsicle'
-
 # Development
-#brew 'php'
-#brew 'php@8.0'
-#brew 'php@7.4'
-#brew 'composer'
 brew 'imagemagick'
-#brew 'meilisearch'
-#brew 'mysql'
 brew 'nginx'
-#brew 'node'
 brew 'redis'
 brew 'yarn'
 brew 'starship'
@@ -65,8 +51,6 @@ cask 'homebrew/cask-drivers/elgato-stream-deck'
 cask 'imageoptim'
 cask 'insomnia'
 cask 'pastebot'
-#cask 'phpmon'
-#cask 'phpstorm'
 cask 'ray'
 cask 'readdle-spark'
 cask 'screenflow'
@@ -74,14 +58,11 @@ cask 'slack'
 cask 'tableplus'
 cask 'telegram-desktop'
 cask 'the-unarchiver'
-cask 'tinkerwell'
 cask 'transmit'
 cask 'tunnelbear'
 cask 'tuple'
 cask 'visual-studio-code'
-#cask 'whatsapp'
-#cask 'zoom'
-cask zwift
+
 
 # TODO 
 # Boop

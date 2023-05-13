@@ -9,6 +9,7 @@ tap 'stripe/stripe-cli'
 # Binaries
 brew 'awscli'
 brew 'bash' # Latest Bash version
+brew 'bat' # Used for spatie/visit
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 brew 'gh'
@@ -16,6 +17,7 @@ brew 'git'
 brew 'gnupg'
 brew 'grep'
 brew 'httpie'
+brew 'jq' # Used for spatie/visit
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
@@ -66,6 +68,7 @@ cask 'pastebot'
 #cask 'phpmon'
 #cask 'phpstorm'
 cask 'ray'
+cask 'readdle-spark'
 cask 'screenflow'
 cask 'slack'
 cask 'tableplus'
@@ -78,6 +81,7 @@ cask 'tuple'
 cask 'visual-studio-code'
 #cask 'whatsapp'
 #cask 'zoom'
+cask zwift
 
 # TODO 
 # Boop
@@ -107,7 +111,6 @@ mas 'Byword', id: 420212497
 mas 'Giphy Capture', id: 668208984
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
-mas 'Spark', id: 1176895641
 mas 'Speedtest', id: 1153157709
+mas 'Spring', id: 1508706541
 mas 'Things', id: 904280696
-mas 'Tweetbot', id: 1384080005

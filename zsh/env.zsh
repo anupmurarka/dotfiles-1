@@ -1,5 +1,5 @@
 # Keychain
-eval `keychain --eval --agents ssh --inherit any id_rsa`
+eval `keychain --eval --ssh-allow-forwarded id_rsa`
 
 # Locale
 export LC_ALL=en_US.UTF-8

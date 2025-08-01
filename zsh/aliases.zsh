@@ -42,6 +42,21 @@ alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
 
+# Python & Conda
+#alias setupconda="eval \"$(~/miniforge3/bin/conda shell.zsh hook)\""
+
+# Create x86 conda environment
+create_x86_conda_environment () {
+# example usage: create_x86_conda_environment myenv_x86 python=3.9
+ CONDA_SUBDIR=osx-64 conda create -n $@
+ conda activate $1
+}
+# Create ARM conda environment
+create_ARM_conda_environment () {
+# example usage: create_ARM_conda_environment myenv_x86 python=3.9
+ CONDA_SUBDIR=osx-arm64 conda create -n $@
+ conda activate $1
+}
 
 # # Enable aliases to be sudo’ed
 # alias sudo="sudo "
@@ -88,32 +103,32 @@ alias wip="commit wip"
 #   mkdir -p $@ && cd ${@:$#}
 # }
 
-# # cd into whatever is the forefront Finder window
-# cdf() {
-#   cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
-# }
+# cd into whatever is the forefront Finder window
+cdf() {
+  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
 
-# # Magic Project Opener
-# repo() {
-#   cd "$(~/dotfiles/bin/repo $1)"
-# }
+# Magic Project Opener
+repo() {
+  cd "$(~/dotfiles/bin/repo $1)"
+}
 
-# # Cd to Git repository root folder
-# gr() {
-#   cd "./$(git rev-parse --show-cdup 2>/dev/null)" 2>/dev/null
-# }
+## Cd to Git repository root folder
+#gr() {
+#  cd "./$(git rev-parse --show-cdup 2>/dev/null)" 2>/dev/null
+#}
 
-# # git clone and cd to a repo directory
-# clone() {
-#   git clone $@
-#   if [ "$2" ]; then
-#     cd "$2"
-#   else
-#     cd $(basename "$1" .git)
-#   fi
-#   if [[ -r "./yarn.lock" ]]; then
-#     yarn
-#   elif [[ -r "./package-lock.json" ]]; then
-#     npm install
-#   fi
-# }
+# git clone and cd to a repo directory
+clone() {
+  git clone $@
+  if [ "$2" ]; then
+    cd "$2"
+  else
+    cd $(basename "$1" .git)
+  fi
+  if [[ -r "./yarn.lock" ]]; then
+    yarn
+  elif [[ -r "./package-lock.json" ]]; then
+    npm install
+  fi
+}

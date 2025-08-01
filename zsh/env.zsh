@@ -76,8 +76,10 @@ export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
 # Disable Gatsby telemetry
 # https://www.gatsbyjs.org/docs/telemetry/
-GATSBY_TELEMETRY_DISABLED=1
+export GATSBY_TELEMETRY_DISABLED=1
 
 # Homebrew github personal access token
 export 'HOMEBREW_GITHUB_API_TOKEN='
 
+# Add homebrew python install to path
+export PYTHONPATH=$PYTHONPATH:/opt/homebrew/lib/python3.10/site-packages
